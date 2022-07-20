@@ -41,3 +41,9 @@ CREATE TABLE orders(
     FOREIGN KEY (concession_id) REFERENCES consessions(concession_id),
     FOREIGN KEY (movie_id) REFERENCES movies(movie_id)
 );
+
+ALTER TABLE tickets
+ALTER COLUMN price TYPE MONEY;
+
+ALTER TABLE concession
+ALTER COLUMN price TYPE MONEY;
